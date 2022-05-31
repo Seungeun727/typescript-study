@@ -1,0 +1,23 @@
+{
+  "name": "typeScript-study",
+  "version": "1.0.0",
+  "description": "```\r   npm init -y\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seun2230/TypeScript-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seun2230/TypeScript-study/issues"
+  },
+  "homepage": "https://github.com/seun2230/TypeScript-study#readme",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  }
+}
