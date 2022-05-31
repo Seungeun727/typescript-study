@@ -6,10 +6,10 @@
 let isDone: boolean = false;
 
 isDone = true;    // 가능함
-isDone = 5;       // 불가능함 (변수 선언시 boolean 타입으로 정해졌음)
+// isDone = 5;       // 불가능함 (변수 선언시 boolean 타입으로 정해졌음)
 
 console.log(typeof isDone);   // result : 'boolean'
 
 let isOk: Boolean = true;
 
-let isNotOk: boolean = new Boolean(true);
+// let isNotOk: boolean = new Boolean(true);
