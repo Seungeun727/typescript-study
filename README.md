@@ -64,8 +64,9 @@ let stringVal:string = "Apple";
 let booleanVal: boolean = false;
 let numberVal: number = 10;
 ```
+<br />
 
-# Primitive Type
+# 원시 자료형 (Primitive Type)
 - 실제 값을 저장하는 자료형
 
   타입 | 의미  
@@ -73,9 +74,9 @@ let numberVal: number = 10;
   boolean |  true 혹은 false를 반환함
   number | 부동소수점 값으로 정수, 분수에 사용됨
   string | 문자열의 데이터 형태
-  symbol |
-  number |
-  undefined |
+  symbol | 고유한 데이터
+  null | 변수 선언 시 null 값을 할당한 상태 (typeof =>  object)
+  undefined | 선언하고 값을 할당한 상태 (typeof => undefind)
 
 - primitive type은 소문자로 작성한다.
 -  ⚠️ 래퍼 객체로 만들 수 있음 <br />
