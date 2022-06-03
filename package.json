@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/seun2230/TypeScript-study#readme",
   "dependencies": {
+    "react": "^18.1.0",
     "typescript": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.38",
+    "@types/react": "^18.0.10"
   }
 }
