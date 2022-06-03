@@ -95,9 +95,41 @@ let numberVal: number = 10;
 - Primititve, Union Type, Tuple에 사용함
  
 ## tsconfig 
+- tsconfig.json 파일은 프로젝트의 루트에 위치한다.
+- 컴파일에 필요한 컴파일 옵션을 지정한다.
+
 옵션 | 의미  
 |:---|:---|
 nolmplicitAny | any 판단을 하게 되어 컴파일 에러 발생
 strictNullChecks | 모든 타입에 null과 undefined를 제거함
 nolmplicitReturns | 함수 내 값을 리턴하지 않을 경우 컴파일 에러 발생함
 strictFunctionTypes | 함수의 매개 변수 타입이 같거나 슈퍼타입이 아닌 경우 에러 경고함.
+
+### 최상위 프로퍼티 
+
+옵션 | default |의미  
+|:---|:---:|:---
+complieOnSave | false | 파일 변경후 자동 컴파일 실행 , true / false 
+extends | string | 파일 상대 경로명
+compileOptions | 
+files | 상대 혹은 절대 경로의 리스트 배열
+include | gitignore 패턴임
+exclude | 설정 안하면 (node_modules, bower_components, jspm_packaga, <outDir>)로 제외함
+reference |
+
+### 부연 설명<문서 다시 읽기..>
+
+- files 
+  - exclude 보다 강하다.
+- include와 clude는 glob과 유사한 파일 패턴 목록을 갖음
+  * glob란? 
+  - * : 0개 이상의 문자와 매칭
+  - ? : 한 문자와 매칭
+  - **/ : 반복적으로 하위 디렉토리와 매칭
+- include 
+  - exclude 보다 약하다.
+  - * 사용하면, .ts/ .tsx /.d.ts만 include
+- exclude
+  -<outDir>은 항상 제외임.
+
+
