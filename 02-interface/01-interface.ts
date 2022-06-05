@@ -4,8 +4,8 @@
 // 3. 선언을 병합할 수 있음.
 
 interface Person1 {
-  name: string,
-  age: number
+  name: string;
+  age: number;
 }
 
 function hello1(person: Person1 ): void {
@@ -25,7 +25,7 @@ hello1(p1);
 // 실습 
 // 01. 플래시, 울버린을 추상하는 인터페이스를 정의.
 
-interface Person4 {
+interface Hero1 {
   superhero: string;
   publisher: string;
   alter_ego: string;
@@ -33,12 +33,12 @@ interface Person4 {
   characters: string;
 }
 
-function personFunc(person: Person4):void {
+function personFunc(person: Hero1):void {
   // return "hello" + person.superhero;
   console.log("person.superhero check", person.superhero);
 }
 
-let flash: Person4 = {
+let flash: Hero1 = {
   "superhero": "플래시(flash)",
   "publisher": "DC 코믹스",
   "alter_ego": "제미 게릭",
@@ -47,7 +47,7 @@ let flash: Person4 = {
 };
 
 
-let wolverine: Person4 =  {
+let wolverine: Hero1 =  {
   "superhero": "울버린(Wolverine)",
   "publisher": "Marvel 코믹스",
   "alter_ego": "제임스 하울렛(로건)",
