@@ -61,3 +61,20 @@ var Person9 = /** @class */ (function () {
 }());
 var p25 = new Person9(39);
 // console.log(p25.age);    // error : 'Person9' 클래스 내에서만 접근 가능함.
+var Person10 = /** @class */ (function () {
+    function Person10(name, age) {
+        this.name = name;
+        this.age = age;
+        // this.name = name;
+        // this.age = age;
+    }
+    Person10.prototype.init = function () {
+        return __awaiter(this, void 0, void 0, function () { return __generator(this, function (_a) {
+            return [2 /*return*/];
+        }); });
+    };
+    return Person10;
+}());
+var p26 = new Person10("Mark", 39);
+console.log(p26.name);
+// console.log(p26.age);   // private 접근제한자로 접근 못함.

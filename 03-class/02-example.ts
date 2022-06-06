@@ -23,3 +23,16 @@ class Person9 {
 
 const p25:Person9 = new Person9(39);
 // console.log(p25.age);    // error : 'Person9' 클래스 내에서만 접근 가능함.
+
+
+class Person10 {
+  public constructor(public name: string, private age: number) {
+    // this.name = name;
+    // this.age = age;
+  }
+  public async init() {}
+}
+
+const p26: Person10 = new Person10("Mark", 39);
+console.log(p26.name);
+// console.log(p26.age);   // private 접근제한자로 접근 못함.
