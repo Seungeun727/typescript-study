@@ -99,6 +99,12 @@ let numberVal: number = 10;
 - JavaScript 환경에서는 지원하지 않는다.
 - 변수, 함수, 클래스에 사용 가능함.
 
+## Class 
+- object를 만드는 설계도
+- new를 사용해서 class를 통해 object 만들 수 있다.
+- constructor를 이용해 object 생성하여 값을 전달한다.
+- this를 이용해 obejct를 가리킬 수 있음.
+
 
 ## tsconfig 
 - tsconfig.json 파일은 프로젝트의 루트에 위치한다.
